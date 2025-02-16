@@ -1,0 +1,95 @@
+/* Reset default styles for body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f6f7;
+}
+
+/* Flexbox container for the image and nav */
+header {
+  justify-content: space-between; /* Ensure spacing between image and nav */
+}
+
+/* Image styling */
+img {
+  border-radius: 50%; /* Makes the image circular */
+  margin-right: 20px; /* Adds space between the image and the navigation */
+  margin-top: 50px;
+}
+
+/* Navigation bar styling */
+#nav-bar ul {
+  list-style-type: none; /* Removes bullet points */
+  margin: 0;
+  padding: 10px; /* Adds some padding inside the background */
+  display: flex; /* Align navigation links horizontally */
+  gap: 15px; /* Adds space between nav links */
+  position: fixed; /* Keeps the nav bar fixed at the top */
+  background-color: #1b1b32; /* Background color */
+  left: 0; /* Align to the left of the page */
+  top: 0; /* Align to the top of the page */
+  width: 100%; /* Make the background span the full width of the page */
+  height: 20px; /* Adjust height to cover a portion of the top */
+  align-items: center; /* Vertically align items in the center */
+}
+
+#nav-bar a {
+  text-decoration: none; /* Removes underline from links */
+  color: white; /* Sets link color */
+  font-weight: bold;
+}
+
+#nav-bar a:hover {
+  color: #007BFF; /* Changes color on hover */
+}
+
+/* Adjusting the position of my image */
+img{
+  padding-left: 10px;
+}
+
+/* Ensuring the nav-link text-color does not clash with the background color */
+.nav-link{
+  color: white;
+}
+
+/* Ensure sections are not covered by the fixed nav bar */
+section{
+  padding-top: 70px; /* Adjust to match the nav bar height */
+  margin-top: -50px; /* Counteract any extra space created by padding */
+}
+
+.intro{
+  padding-left: 40px; /* Adjust left padding to align with other paragraph text */
+}
+
+.about{
+  padding-left: 40px;
+}
+
+h1, h2{
+  padding-left: 10px;
+}
+
+.contact{
+  padding-left: 10px;
+}
+
+a{
+  text-decoration: none; /* Removing underline from the link */
+  color: #1b1b32; /* Changing color of text link */
+}
+
+a:hover{
+  color: #007BFF; /* Changes color on hover */
+}
+
+li{
+  margin-bottom: 10px; /* Add spacing between the listed items */
+}
+
+
+
+
+
