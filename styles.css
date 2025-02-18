@@ -1,7 +1,7 @@
 /* Reset default styles for body */
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 0 50px 0; /* Add padding to the bottom to account for the footer height */
   font-family: Arial, sans-serif;
   background-color: #f5f6f7;
 }
@@ -58,6 +58,7 @@ img{
 section{
   padding-top: 70px; /* Adjust to match the nav bar height */
   margin-top: -50px; /* Counteract any extra space created by padding */
+  padding-bottom: 50px; /* Add padding to the bottom to account for the footer height */
 }
 
 .intro{
@@ -66,6 +67,7 @@ section{
 
 .about{
   padding-left: 40px;
+  animation: fadeIn 2s ease-in-out;
 }
 
 h1, h2{
@@ -89,7 +91,35 @@ li{
   margin-bottom: 10px; /* Add spacing between the listed items */
 }
 
+/* Animation for text */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
+.animated-text, .contact, .animated-img {
+  animation: fadeIn 2s ease-in-out;
+}
 
+footer {
+  background-color: #1b1b32; /* Same background color as the nav bar */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 10px 0; /* Add some padding */
+  position: fixed; /* Fix the footer at the bottom */
+  width: 100%; /* Full width */
+  bottom: 0; /* Align to the bottom of the page */
+}
 
+.contact a {
+  color: white; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+}
 
+.contact a:hover {
+  color: #007BFF; /* Change color on hover */
+}
